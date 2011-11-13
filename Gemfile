@@ -28,6 +28,6 @@ group :test do
 end
 
 group :production do
-  # gem 'pg' # PostgreSQL adapter
-  # gem 'thin' # Webserver. Feel free to set it to Unicorn/Mogrel/etc.
+  gem 'pg' # PostgreSQL adapter
+  gem 'thin' # Webserver. Feel free to set it to Unicorn/Mogrel/etc.
 end
