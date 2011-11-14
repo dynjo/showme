@@ -21,16 +21,18 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-group :development do
-  gem 'sqlite3'
-end
-
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+end
+
+group :development, :test do
+  gem 'mysql'
 end
 
 group :production do
   gem 'pg' # PostgreSQL adapter
   gem 'thin' # Webserver. Feel free to set it to Unicorn/Mogrel/etc.
 end
+
+gem 'twitter_bootstrap_form_for'
