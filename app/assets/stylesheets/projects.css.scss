@@ -1,3 +1,13 @@
 // Place all the styles related to the projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Compass
+@import "compass/reset";
+@import "compass/typography";
+@import "compass/css3";
+@import "compass/layout";
+
+#shadowtest {
+ @include border-radius(4px); 
+}
